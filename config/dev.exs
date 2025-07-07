@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :potato_bank, PotatoBank.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "nestorpereiradasilvajunior",
+  password: "",
   hostname: "localhost",
   database: "potato_bank_dev",
   stacktrace: true,
