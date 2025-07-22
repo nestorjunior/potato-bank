@@ -1,0 +1,12 @@
+defmodule PotatoBank.Users.Delete do
+  alias PotatoBank.Users.User
+  alias PotatoBank.Repo
+
+  def call(id) do
+   case Repo.get(User, id) do
+    nil -> {:error, :not_found}
+    user -> Repo.delete(user)
+   end
+  end
+
+end
