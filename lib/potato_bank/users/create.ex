@@ -6,6 +6,7 @@ defmodule PotatoBank.Users.Create do
     params
     |> User.changeset()
     |> Repo.insert()
+
     # |> handle_insert()
   end
 
